@@ -1,0 +1,12 @@
+{
+  "name": "js-debugger",
+  "version": "1.0.0",
+  "description": "javascript file debugger",
+  "license": "MIT",
+  "scripts": {
+    "start": "node main.js",
+    "debug": "node --inspect main.js",
+    "debug:brk": "node --inspect-brk main.js"
+  },
+  "dependencies": {}
+}

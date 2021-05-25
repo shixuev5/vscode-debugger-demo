@@ -1,0 +1,14 @@
+{
+  "name": "ts-debugger",
+  "version": "1.0.0",
+  "description": "debugger typescript file",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build && node main.js",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^4.2.4"
+  }
+}

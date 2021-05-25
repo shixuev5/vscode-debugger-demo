@@ -1,0 +1,8 @@
+{
+  "name": "chrome-debugger",
+  "version": "1.0.0",
+  "description": "html debugger with Chrome Debugegr Extension",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {}
+}

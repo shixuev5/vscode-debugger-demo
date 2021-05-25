@@ -1,0 +1,89 @@
+{
+  // 使用 IntelliSense 了解相关属性。
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    /* js-debugger */
+    {
+      "name": "js-debugger",
+      "type": "pwa-node",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/js-debugger/main.js"
+    },
+    {
+      "name": "js-debugger-attach",
+      "port": 9229,
+      "request": "attach",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node"
+    },
+    {
+      "name": "js-debugger-npm",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run-script",
+        "debug"
+      ],
+      "port": 9229,
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    /* chrome-debugegr */
+    {
+      "name": "chrome-debugger",
+      "request": "launch",
+      "type": "pwa-chrome",
+      "url": "http://localhost:5500/chrome-debugger",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "chrome-debugger-file",
+      "request": "launch",
+      "type": "pwa-chrome",
+      "file": "${workspaceFolder}/chrome-debugger/index.html"
+    },
+    /* ts-debugger */
+    {
+      "name": "ts-debugger",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register"
+      ],
+      "args": [
+        "${workspaceFolder}/ts-debugger/main.ts"
+      ]
+    },
+    /* node-debugger */
+    {
+      "name": "node-debugger",
+      "type": "pwa-node",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/node-debugger/src/app.js",
+      "stopOnEntry": true
+    },
+    {
+      "name": "node-debugger-attach",
+      "port": 9229,
+      "request": "attach",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node"
+    }
+  ]
+}
